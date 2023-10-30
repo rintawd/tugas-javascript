@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latihan javascript</title>
+    <link rel="stylesheet" href="tugas.css" />
+  </head>
+  <body>
+    <form id="tokoOnlineForm">
+      <table>
+        <tr>
+          <th colspan="2"><h2>Form Toko Online</h2></th>
+        </tr>
+        <tr>
+          <td><label for="nama">Nama Pelanggan:</label></td>
+          <td>
+            <input type="text" id="nama" name="nama" required /><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="produk">Pilih Produk:</label></td>
+          <td>
+            <select id="produk" name="produk">
+              <option value="TV">TV</option>
+              <option value="AC">AC</option>
+              <option value="Lemari">Lemari</option></select
+            ><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="jumlah">Banyak Item Produk yang dibeli:</label></td>
+          <td>
+            <input
+              type="number"
+              id="jumlah"
+              name="jumlah"
+              required
+            /><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button
+              class="button"
+              type="button"
+              id="proses"
+              onclick="hitungTransaksi()"
+            >
+              Proses
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="skrip1.js"></script>
+  </body>
+</html>
